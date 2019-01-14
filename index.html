@@ -13,92 +13,16 @@
         crossorigin="anonymous">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <title>SAARC CXO CONFERENCE</title>
 
 
     <style>
-          .navbar .navbar-brand {
-            color: #000;
-        }
 
-        nav.white .navbar-brand {
-            color: black;
-        }
 
-        .navbar {
-            background-color: transparent;
-            border-color: transparent;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-
-        nav.white .navbar-right li a {
-            text-transform: uppercase;
-            color: black;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            /* font-size: 13px; */
-        }
-
-        nav.white {
-            background-color: white;
-            transition: 0.7s linear;
-        }
-
-        .navbar .navbar-right li a {
-            text-transform: uppercase;
-            color: #fff;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 12px;
-        }
-
-        .navbar .navbar-right .active a {
-            border-bottom: 2px solid #8201C4;
-        }
-
-        .navbar .navbar-right a:hover {
-            border-bottom: 2px solid #8201C4;
-            background-color: transparent;
-        }
-
-        /* Media Queires */
-        @media(max-width: 568px) {
-            .navbar .navbar-brand {
-                color: white;
-            }
-
-            nav.white .navbar-brand {
-                color: black;
-            }
-
-            .navbar {
-                background-color: #fff;
-                border-color: #fff;
-                color:#000
-            }
-
-            .navbar .icon-bar {
-                background-color: #000;
-                border-color: #000;
-            }
-
-            nav.white {
-                background-color: white;
-                transition: 0.7s linear;
-                box-shadow: 0 0 5px 0 #333;
-            }
-
-            nav.white .icon-bar {
-                background-color: black;
-                border-color: black;
-            }
-
-            .navbar .navbar-right li a {
-                text-transform: uppercase;
-                color: #000;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                font-size: 16px;
-            }
-        }
+          
 
 
         /* Slider CSS */
@@ -126,21 +50,33 @@
 }
 
 .slide1 {
-  background-image: linear-gradient(rgba(22, 22, 22, 0.521), rgba(0, 0, 0, 0.7)), url(../img/1.JPG);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.349)), url(../img/WEB-2.jpg);
 }
 .slide2 {
-  background-image:linear-gradient(rgba(22, 22, 22, 0.521), rgba(0, 0, 0, 0.7)), url(../img/2.JPG);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.349)), url(../img/WEB-1.jpg);
 }
 .slide3 {
-  background-image: linear-gradient(rgba(22, 22, 22, 0.521), rgba(0, 0, 0, 0.7)), url(../img/3.JPG)
+  background-image: linear-gradient(rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.349)), url(../img/3.JPG)
 }
 
 .slide-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  margin-left: 150px;
+  /* align-items: center; */
+  /* text-align: center; */
+}
+
+@media(max-width:700px){
+    .slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0;
+  align-items: center; 
   text-align: center;
+}
 }
 
 .slide-content span {
@@ -174,6 +110,11 @@
 }
 
 
+#slide1 p{
+    margin: 0;
+    padding: 0;
+}
+
         /* End of Slider */
 
         
@@ -194,6 +135,104 @@
             color: #fff !important;
         }
 
+
+        /* Panel */
+
+        .panel-default{
+            background:transparent; border-radius:0 0 20px 20px;
+            border: 2px solid #000;
+        }
+
+        .panel-default:hover{
+            border: 2px solid ;
+            /* border-color: -moz-linear-gradient(top, blue, red) !important;
+             */
+             /* -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#00abeb), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat; */
+
+        }
+
+        .panel-header img{
+            margin-top: 20px !important;
+        }
+
+        .panel-header:hover img{
+            border-radius: 50%;
+            
+            
+        }
+
+        .panel-footer{
+            /* background:#fff;  */
+            border-radius: 0 0 18px 18px; padding: 5px
+        }
+
+        #pname{
+            text-align:center; 
+            margin-bottom: 2px; 
+            font-size:20px;
+            font-weight: 600;
+        }
+
+        #sname{
+            text-align:center; 
+            font-size: 12px; 
+            margin-top: 0;
+        }
+
+
+
+        /* Blur + Gray Scale */
+.panel-header img {
+    border-radius: 50%; height:200px; margin:auto;
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.panel-header:hover img {
+	-webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(100%) blur(3px);
+}
+
+/* End */
+
+
+/* Overlay */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: transparent;
+  border-radius:50%;
+}
+
+.panel-header:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-linkedin:hover, .fa-linkedin-square:hover {
+  color: #0077B5;
+}
+/* End Of Overlay */
+
     </style>
 </head>
 <body>
@@ -204,7 +243,7 @@
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="#">
-                            <img src="img/saarclogo.png" style="height:40px" alt="" class="img-responsive">
+                            <img src="img/saarclogo.png" style="height:40px; margin-top: -5px" alt="" class="img-responsive">
                         </a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
                             aria-expanded="false">
@@ -239,28 +278,39 @@
                     <div id="arrow-left" class="arrow"></div>
                     <div id="slider">
                       <div class="slide slide1">
-                        <div class="slide-content">
+                        <div id="slide1" class="slide-content">
                           <span style="font-family:Conv_ProximaNova-Regular;">
-                              <P>Location: 
-                               Bengaluru, India <br>
-                               February 22nd and 23rd, 2019</P>
+                            <p style="font-size:20px">A Glimpse Of</p>
+                            <p style="font-weight:600; font-size:40px; padding: 0 !important">
+                                <span style="font-size:55px;padding: 0 !important; font-style: italic; color:#ED1C24">SAARC</span>
+                                 Startup Awards</p>
+                            <p style="font-size:18px">February 22nd and 23rd, 2019</p>
+                            <p style="font-size:18px">Venue: TBD</p>
                                 
-                               <p>A Glimpse of SAARC STARTUP SUMMIT PART-2</p></span>
+                                
+                               </span>
                         </div>
                       </div>
                       <div class="slide slide2">
-                        <div class="slide-content">
-                          <span>
-                              <h4 style="font-size:40px; font-family:Conv_ProximaNova-Regular;">The First Annual CXO Conference <br> India 2019</h4>
-                              <p style="font-size:18px">India's most esteemed gathering for +300 CMOs and CXO.</p>
-                              <a class="btn" style="border: 3px solid #8201C4; background:transparent; color:#fff" href="register.html" > Register Now</a>
+                        <div id="slide1" class="slide-content">
+                          <span style="font-family:Conv_ProximaNova-Regular;">
+                                <p style="font-size:20px">The First Annual</p>
+                                <p style="font-weight:600; font-size:40px; padding: 0 !important">
+                                    <span style="font-size:55px;padding: 0 !important; font-style: italic">CXO Conference</span>
+                                     India 2019</p>
+                                <p style="font-size:18px">India's most esteemed gathering for +300 CMOs and CXO.</p>
+                               
+                              <a class="btn" style="border: 3px solid #ED1C24; background:transparent; color:#fff" href="register.html" > Register Now</a>
                           </span>
                         </div>
                       </div>
                       <div class="slide slide3">
-                        <div class="slide-content">
-                                <span>
-                                        <h4 style="font-size:40px; font-family:Conv_ProximaNova-Regular;">Conference Theme</h4>
+                        <div id="slide1" class="slide-content">
+                                <span style="font-family:Conv_ProximaNova-Regular;">
+
+                                        
+                                        <p style="font-weight:600; font-size:40px; padding: 0 !important">
+                                            Conference Theme</p>
                                         <p style="font-size:18px">Key Theme and topics are developed by <br>standing committee and advisory board from the most respected CMO's.
                                         </p>
                                         <a class="btn" style="border: 3px solid #8201C4; background:transparent; color:#fff" href="register.html" > Register Now</a>
@@ -285,69 +335,105 @@
 
     </section>
 
-    <section id="organizers" style="color:#262626 !important">
+    <section id="organizers" style="color:#fff !important">
         <div class="container">
             <div class="row">
                 <br>
-                <center><h3 style="font-family:Conv_ProximaNova-Regular; color:#172935; font-size: 44px; font-weight:400">Speakers</h3></center>
+                <center><h3 style="font-family:Conv_ProximaNova-Regular; color:#fff; font-size: 44px; font-weight:400">Guest Of Honour</h3></center>
             </div>
+            <br>
             <div class="row">
-                <div class="col-md-3" style="margin:auto">
+                <div class="col-md-3 col-sm-6" style="margin:auto">
                     <div class="panel panel-default">
                         <div class="panel-header">
-                            <img src="img/Guru_Paypal.jpe" alt="" class="img img-responsive" style="width:100%">
+                            <img src="img/Guru_Paypal.jpe" alt="" class="img img-responsive">
+                            <div class="overlay">
+                                    <a href="#" class="icon" title="User Profile">
+                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    </a>
+                                    </div>
                         </div>
-                        <div class="panel-body" style="padding-bottom:10px">
-                            <p style="text-align:center">Guru Bhatt</p>
-                            <p style="text-align:center">GM and Head of Technologies</p>
-                            <p style="text-align:center">
-                                <img src="img/paypal.png" alt="" class="img-responsive" style="height:20px; margin:auto">
-                            </p>
+                        <div class="panel-body" style="padding-bottom:0">
+                            <p id="pname" style="text-align:center">Guru Bhatt</p>
+                            <p id="sname" style="text-align:center">GM and Head of Technologies</p>
+                           
+                        </div>
+
+                        <div class="panel-footer">
+                                <p style="text-align:center">
+                                        <img src="img/paypal.png" alt="" class="img-responsive" style="height:30px; margin:auto; padding: 0">
+                                </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3" style="margin:auto">
+                <div class="col-md-3 col-sm-6" style="margin:auto">
                         <div class="panel panel-default">
                             <div class="panel-header">
-                                <img src="img/sushma_itc.jpg" alt="" class="img img-responsive" style="width:100%">
+                                <img src="img/sushma_itc.jpg" alt="" class="img img-responsive">
+                                <div class="overlay">
+                                        <a href="#" class="icon" title="User Profile">
+                                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        </a>
+                                        </div>
                             </div>
                             <div class="panel-body" style="padding-bottom:0">
-                                <p style="text-align:center">Sushma Rajagopalan</p>
-                                <p style="text-align:center">MD and CEO</p>
-                                <p style="text-align:center">
-                                        <img src="img/itc.png" alt="" class="img-responsive" style="height:30px; margin:auto">
-                                </p>
-
+                                <p id="pname">Sushma Rajagopalan</p>
+                                <p id="sname">MD and CEO</p>
+                               
                             </div>
+                            <div class="panel-footer">
+                                    <p style="text-align:center">
+                                            <img src="img/itc.png" alt="" class="img-responsive" style="height:30px; margin:auto; padding: 0">
+                                    </p>
+                            </div>
+                           
                         </div>
                     </div>
 
-                    <div class="col-md-3" style="margin:auto">
+                    <div class="col-md-3 col-sm-6" style="margin:auto">
                             <div class="panel panel-default">
                                 <div class="panel-header">
-                                    <img src="img/Ravinder.jpeg" alt="" class="img img-responsive" style="width:100%">
+                                    <img src="img/Ravinder.jpeg" alt="" class="img img-responsive">
+                                    <div class="overlay">
+                                            <a href="#" class="icon" title="User Profile">
+                                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                            </a>
+                                            </div>
                                 </div>
                                 <div class="panel-body" style="padding-bottom:0">
-                                    <p style="text-align:center">Ravinder Singh</p>
-                                    <p style="text-align:center">Chief Innovation Officer</p>
-                                    <p style="text-align:center">
-                                            <img src="img/vistara.png" alt="" class="img-responsive" style="height:30px; margin:auto">
-                                    </p>
+                                    <p id="pname" >Ravinder Singh</p>
+                                    <p id="sname" style="text-align:center">Chief Innovation Officer</p>
+                                   
+                                </div>
+                                <div class="panel-footer">
+                                        <p style="text-align:center">
+                                                <img src="img/vistara.png" alt="" class="img-responsive" style="height:30px; margin:auto; padding: 0">
+                                        
+                                            </p>
+
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-3" style="margin:auto">
+                        <div class="col-md-3 col-sm-6" style="margin:auto">
                                 <div class="panel panel-default">
                                     <div class="panel-header">
-                                        <img src="img/sanket.jpeg" alt="" class="img img-responsive" style="width:100%">
+                                        <img src="img/sanket.jpeg" alt="" class="img img-responsive">
+                                        <div class="overlay">
+                                                <a href="#" class="icon" title="User Profile">
+                                                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                                </a>
+                                                </div>
                                     </div>
                                     <div class="panel-body" style="padding-bottom:0">
-                                        <p style="text-align:center">Sanket Atal</p>
-                                        <p style="text-align:center">VP and Managing Director</p>
-                                        <p style="text-align:center">
-                                                <img src="img/emc.jpeg" alt="" class="img-responsive" style="height:30px; margin:auto">
-                                        </p>
+                                        <p id="pname">Sanket Atal</p>
+                                        <p id="sname" style="text-align:center">VP and Managing Director</p>
+                                        
+                                    </div>
+                                    <div class="panel-footer">
+                                            <p style="text-align:center">
+                                                    <img src="img/emc.jpeg" alt="" class="img-responsive" style="height:30px; margin:auto; padding: 0">
+                                            </p>
                                     </div>
                                 </div>
                             </div>
@@ -360,12 +446,12 @@
 
 
 
-    <section id="whyattend" style="color:#262626 !important">
+    <section id="whyattend">
         <div class="container">
             <div class="row">
                 <br>
                 <center>
-                    <h3 style="font-family:Conv_ProximaNova-Regular; color:#172935; font-size: 44px; font-weight:400">Why
+                    <h3 style="font-family:Conv_ProximaNova-Regular; font-size: 44px; font-weight:400">Why
                         Attend ?</h3>
                 </center>
             </div>
@@ -385,7 +471,7 @@
     </section>
 
 
-    <section id="about" style="color:#262626 !important">
+    <section id="about">
             <div class="container-fluid">
                 <div class="row">
                     <br>
@@ -441,12 +527,12 @@
         </section>
 
 
-        <section id="Organizers" style="color:#262626 !important">
+        <section id="Organizers">
             <div class="container">
                 <div class="row">
                     <br>
                     <center>
-                        <h3 style="font-family:Conv_ProximaNova-Regular; color:#172935; font-size: 44px; font-weight:400">
+                        <h3 style="font-family:Conv_ProximaNova-Regular; font-size: 44px; font-weight:400">
                             Organizers</h3>
                     </center>
                 </div>
@@ -458,7 +544,7 @@
                     </div>
                     <div class="col-md-6">
                         <center>
-                            <h3 style="font-family:Conv_ProximaNova-Regular; color:#172935; font-size: 44px; font-weight:400">
+                            <h3 style="font-family:Conv_ProximaNova-Regular; font-size: 44px; font-weight:400">
                                 GSA</h3>
                         </center>
                         <p style="text-align:justify;">Global Startup Awards SAARC focuses on celebrating the spirit of
@@ -478,7 +564,7 @@
                     </div>
                     <div class="col-md-6 col-md-pull-6">
                         <center>
-                            <h3 style="font-family:Conv_ProximaNova-Regular; color:#172935; font-size: 44px; font-weight:400">
+                            <h3 style="font-family:Conv_ProximaNova-Regular; font-size: 44px; font-weight:400">
                                 FAME</h3>
                         </center>
                         <br>
@@ -501,11 +587,11 @@
         <section id="partners">
             <div class="container">
                 <center>
-                        <h3 style="font-family:Conv_ProximaNova-Regular; color:#172935; font-size: 44px; font-weight:400">
+                        <h3 style="font-family:Conv_ProximaNova-Regular; font-size: 44px; font-weight:400">
                             Partners</h3>
                     </center>
             <div class="row">
-                    <h3 style="font-family:Conv_ProximaNova-Regular; color:#172935; font-size: 20px; font-weight:600; text-align: center">
+                    <h3 style="font-family:Conv_ProximaNova-Regular; font-size: 20px; font-weight:600; text-align: center">
                             Executed By</h3>
                 <div class="col-md-6 col-sm-6 col-xs-6">
                     <a href="http://www.globalstartupawards.com/" target="_blank">
@@ -521,41 +607,49 @@
             <br> <br>
 
             <div class="row">
+
+                    <div class="col-md-3 col-sm-12 col-xs-12"></div>
                     <div class="col-md-6 col-sm-12 col-xs-12">
-                    <h3 style="font-family:Conv_ProximaNova-Regular; color:#172935; font-size: 20px; font-weight:600; text-align: center">
+                    <h3 style="font-family:Conv_ProximaNova-Regular; font-size: 20px; font-weight:600; text-align: center">
                             Developer Partner</h3>
                 
-                    <a href="http://www.globalstartupawards.com/" target="_blank">
-                        <img src="img/fb.png" alt="" class="img-responsive" alt="Fame Technologies">
+                    <a class="fb" href="http://www.globalstartupawards.com/" target="_blank">
+                        <img src="img/fb.png" alt="" class="img-responsive" alt="Fame Technologies" style="width:100%; height:auto">
                     </a>
                 </div>
+                <div class="col-md-3 col-sm-12 col-xs-12"></div>
                
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <h3 style="font-family:Conv_ProximaNova-Regular; color:#172935; font-size: 20px; font-weight:600; text-align: center">
-                            Associate Sponsor</h3>
-                
-                    <a href="http://www.globalstartupawards.com/" target="_blank">
-                        <img src="img/Ehical paper  logo.jpg" alt="" class="img-responsive" alt="Fame Technologies">
-                    </a>
-                </div>
+
+               
                
             </div>
 
             <br><br>
 
             <div class="row">
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                <h3 style="font-family:Conv_ProximaNova-Regular; color:#172935; font-size: 20px; font-weight:600; text-align: center">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                            <h3 style="font-family:Conv_ProximaNova-Regular; font-size: 20px; font-weight:600; text-align: center">
+                                    Associate Sponsor</h3>
+                        
+                            <a href="http://www.globalstartupawards.com/" target="_blank">
+                                <img src="img/Ehical paper  logo.jpg" alt="" class="img-responsive" alt="Fame Technologies">
+                            </a>
+                        </div>
+
+
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                                <h3 style="font-family:Conv_ProximaNova-Regular; font-size: 20px; font-weight:600; text-align: center">
+                            
+                                    Marketing and Branding Partner</h3>
+                               
+                                    <a href="http://www.globalstartupawards.com/" target="_blank">
+                                        <img src="img/brand2brand.jpg" alt="" class="img-responsive" alt="Fame Technologies">
+                                    </a>
+                                </div>
+                   
             
-                    Marketing and Branding Partner</h3>
-               
-                    <a href="http://www.globalstartupawards.com/" target="_blank">
-                        <img src="img/brand2brand.jpg" alt="" class="img-responsive" alt="Fame Technologies">
-                    </a>
-                </div>
-            
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                <h3 style="font-family:Conv_ProximaNova-Regular; color:#172935; font-size: 20px; font-weight:600; text-align: center">
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                <h3 style="font-family:Conv_ProximaNova-Regular; font-size: 20px; font-weight:600; text-align: center">
             
             
                     Corporate Gifting Partner</h3>
@@ -564,17 +658,19 @@
                         <img src="img/offineeds.png" alt="" class="img-responsive" alt="Fame Technologies">
                         </a>
                     </div>
+
+                   
                 </div>
 
                 <br><br>
         </div>
         </section>
 
+<hr style="border: 1px solid #fff">
 
 
-
-        <footer style="background:#302f2f; padding-top:20px; padding-bottom:0px; margin-bottom:0; color: #fff !important;">
-            
+        <footer style="padding-top:20px; padding-bottom:0px; margin-bottom:0; color: #fff !important;">
+            <div class="container">
                 
             <div class="row">
                     <div class="container">
@@ -637,7 +733,7 @@
                         <p style="font-size:12px; text-align: center; margin-bottom:0; padding-bottom: 0">Website Designed and Developed by <a href="">Fame Technologies</a></p>
                     </div>
             </div>
-
+        </div>
         </footer>
 
         

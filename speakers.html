@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/sss-icon.png" type="image/jpeg" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>SAARC STARTUP CONFERENCE</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Unlock');
+        @import url('https://fonts.googleapis.com/css?family=Merriweather');
+        @import url('https://fonts.googleapis.com/css?family=Oswald');
+
+        
+        
+       
+
+        #speaker .panel-heading img{
+            width:100%;
+        }
+
+
+      
+        /* Panel */
+
+        .panel-default{
+            background:transparent; border-radius:0 0 20px 20px;
+            border: 2px solid #000;
+        }
+
+        .panel-default:hover{
+            border: 2px solid ;
+            /* border-color: -moz-linear-gradient(top, blue, red) !important;
+             */
+             /* -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#00abeb), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat; */
+
+        }
+
+        .panel-header img{
+            margin-top: 20px !important;
+        }
+
+        .panel-header:hover img{
+            border-radius: 50%;
+            
+            
+        }
+
+        .panel-footer{
+            /* background:#fff;  */
+            border-radius: 0 0 18px 18px; padding: 5px
+        }
+
+        #pname{
+            text-align:center; 
+            margin-bottom: 2px; 
+            font-size:20px;
+            font-weight: 600;
+        }
+
+        #sname{
+            text-align:center; 
+            font-size: 12px; 
+            margin-top: 0;
+        }
+
+
+
+        /* Blur + Gray Scale */
+.panel-header img {
+    border-radius: 50%; height:200px; margin:auto;
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.panel-header:hover img {
+	-webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(100%) blur(3px);
+}
+
+/* End */
+
+
+/* Overlay */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: transparent;
+  border-radius:50%;
+}
+
+.panel-header:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-linkedin:hover, .fa-linkedin-square:hover {
+  color: #0077B5;
+}
+/* End Of Overlay */
+    </style>
+</head>
+
+<body>
+
+    <!-- Start of Header Section -->
+    <section class="header">
+        <nav class="navbar navbar-expand-lg navbar-fixed-top white">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/saarclogo.png" style="height:30px" alt="" class="img-responsive">
+                    </a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="list-unstyled list-inline nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="why-attend.html">Why Attend</a></li>
+                        <li class="active"><a href="speakers.html">Speakers</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="attendees.html">Attendees-2018</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+    <!-- End of Header Section -->
+
+
+
+
+
+    <section id="speaker" class="speaker_page" style="margin-top:100px">
+        <div class="container-fluid">
+            <div class="row">
+                <center><h3 style="font-family:Conv_ProximaNova-Regular; font-size: 44px; font-weight:400">Guest Of Honour</h3></center><br>
+
+                    <div class="row">
+                            <div class="col-md-3 col-sm-6" style="margin:auto">
+                                    <div class="panel panel-default">
+                                        <div class="panel-header">
+                                            <img src="img/Guru_Paypal.jpe" alt="" class="img img-responsive">
+                                            <div class="overlay">
+                                                    <a href="#" class="icon" title="User Profile">
+                                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                                    </a>
+                                                    </div>
+                                        </div>
+                                        <div class="panel-body" style="padding-bottom:0">
+                                            <p id="pname" style="text-align:center">Guru Bhatt</p>
+                                            <p id="sname" style="text-align:center">GM and Head of Technologies</p>
+                                           
+                                        </div>
+                
+                                        <div class="panel-footer">
+                                                <p style="text-align:center">
+                                                        <img src="img/paypal.png" alt="" class="img-responsive" style="height:30px; margin:auto; padding: 0">
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6" style="margin:auto">
+                                        <div class="panel panel-default">
+                                            <div class="panel-header">
+                                                <img src="img/sushma_itc.jpg" alt="" class="img img-responsive">
+                                                <div class="overlay">
+                                                        <a href="#" class="icon" title="User Profile">
+                                                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                                        </a>
+                                                        </div>
+                                            </div>
+                                            <div class="panel-body" style="padding-bottom:0">
+                                                <p id="pname">Sushma Rajagopalan</p>
+                                                <p id="sname" >MD and CEO</p>
+                                               
+                                            </div>
+                                            <div class="panel-footer">
+                                                    <p style="text-align:center">
+                                                            <img src="img/itc.png" alt="" class="img-responsive" style="height:30px; margin:auto; padding: 0">
+                                                    </p>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                
+                                    <div class="col-md-3 col-sm-6" style="margin:auto">
+                                            <div class="panel panel-default">
+                                                <div class="panel-header">
+                                                    <img src="img/Ravinder.jpeg" alt="" class="img img-responsive">
+                                                    <div class="overlay">
+                                                            <a href="#" class="icon" title="User Profile">
+                                                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                                            </a>
+                                                            </div>
+                                                </div>
+                                                <div class="panel-body" style="padding-bottom:0">
+                                                    <p id="pname" >Ravinder Singh</p>
+                                                    <p id="sname" style="text-align:center">Chief Innovation Officer</p>
+                                                   
+                                                </div>
+                                                <div class="panel-footer">
+                                                        <p style="text-align:center">
+                                                                <img src="img/vistara.png" alt="" class="img-responsive" style="height:30px; margin:auto; padding: 0">
+                                                        </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-md-3 col-sm-6" style="margin:auto">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-header">
+                                                        <img src="img/sanket.jpeg" alt="" class="img img-responsive">
+                                                        <div class="overlay">
+                                                                <a href="#" class="icon" title="User Profile">
+                                                                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                                                </a>
+                                                                </div>
+                                                    </div>
+                                                    <div class="panel-body" style="padding-bottom:0">
+                                                        <p id="pname">Sanket Atal</p>
+                                                        <p id="sname" style="text-align:center">VP and Managing Director</p>
+                                                        
+                                                    </div>
+                                                    <div class="panel-footer">
+                                                            <p style="text-align:center">
+                                                                    <img src="img/emc.jpeg" alt="" class="img-responsive" style="height:30px; margin:auto; padding: 0">
+                                                            </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    </div>
+                </div>
+            </div>
+                
+    </section>
+
+
+
+    <section id="speaker" class="speaker_page" style="margin-top:100px">
+        <div class="container-fluid">
+            <div class="row">
+                <center><h3 style="font-family:Conv_ProximaNova-Regular; font-size: 44px; font-weight:400">Speakers</h3></center> <br>
+
+
+
+                <div class="col-md-3 col-sm-6" style="margin:auto">
+                        <div class="panel panel-default">
+                            <div class="panel-header">
+                                <img src="img/ashish_harman.jpg" alt="" class="img img-responsive">
+                                <div class="overlay">
+                                        <a href="#" class="icon" title="User Profile">
+                                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        </a>
+                                        </div>
+                            </div>
+                            <div class="panel-body" style="padding-bottom:0">
+                                <p id="pname">Ashish Bhatia</p>
+                                <p id="sname" style="text-align:center">Senior Director and Global Head - Presales</p>
+                                
+                            </div>
+                            <div class="panel-footer">
+                                    <p style="text-align:center">
+                                            <img src="img/harman.png" alt="" class="img-responsive" style="height:30px; margin:auto; padding: 0">
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                
+
+
+
+
+                   
+
+
+                    <!-- <div class="col-md-3 col-sm-6 col-xs-12" style="background-size: cover;
+                     background-position: center center;
+                     background-repeat: no-repeat;">
+                        <div class="panel panel-default" style="padding:5px">
+                            <img src="img/sushma_itc.jpg" alt="" class="img-responsive"> <br>
+                            <img class="img-responsive" src="img/itc.png" alt="" style="margin:auto; height: 50px; border-radius: 0 !important">
+                            <h3 style="margin-bottom:10px">Sushma Rajagopalan </h3>
+                            <h6 style="margin-bottom:10px; text-align: center"> MD and CEO</h6>
+                            <p>India</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-12" style="background-size: cover;
+                     background-position: center center;
+                     background-repeat: no-repeat;">
+                        <div class="panel panel-default" style="padding:5px">
+                            <img src="img/Ravinder.jpeg" alt="" class="img-responsive"> <br>
+                            <img class="img-responsive" src="img/vistara.png" alt="" style="margin:auto; height: 50px; border-radius: 0 !important">
+                            <h3 style="margin-bottom:10px">Ravinder Singh</h3>
+                            <h6 style="margin-bottom:10px; text-align: center">Chief Innovation Officer
+                            </h6>
+                            <p>India</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-12" style="background-size: cover;
+                     background-position: center center;
+                     background-repeat: no-repeat;">
+                        <div class="panel panel-default" style="padding:5px">
+                            <img src="img/sanket.jpeg" alt="" class="img-responsive"> <br>
+                            <img class="img-responsive" src="img/intuit.jpeg" alt="" style="margin:auto; height: 50px; border-radius: 0 !important">
+                            <h3 style="margin-bottom:10px">Sanket Atal</h3>
+                            <h6 style="margin-bottom:10px; text-align: center">VP and Managing Director
+                            </h6>
+                            <p>India</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+                
+    </section>
+
+
+
+
+    
+
+   
+
+
+
+    <!-- Speakers Section -->
+    <section id="speaker" class="speaker_page" style="margin-top:100px">
+        <div class="container-fluid">
+            <div class="row">
+                <h3 class="container-title" style="font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align:justify">Superheroes
+                    of Eco-System</h3> <br>
+                <p style="text-align:justify">Hear from the founder and ecosystem builder who are enabling the next
+                    generation of Startups.</p>
+         <!--       <div class="col-md-3 col-sm-6 col-xs-12" style="background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;">
+                    <div class="panel panel-default" style="padding:15px">
+                        <img src="img/Krishnachytanya_Google.jpg" alt="" class="img-responsive"> <br>
+                        <img class="img-responsive" src="img/google.png" alt="" style="margin:auto; height: 30px; border-radius: 0 !important">
+                        <h3 style="margin-bottom:10px">Krishnachytanya</h3>
+                        <h6 style="margin-bottom:10px; text-align: center; font-size:12px">Partnerships Manager, Cloud
+                            Startup Programs</h6>
+                        <p>India</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12" style="background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;">
+                    <div class="panel panel-default" style="padding:15px">
+                        <img src="img/jitendraGupta.png" alt="" class="img-responsive"> <br>
+                        <img class="img-responsive" src="img/payu.gif" alt="" style="margin:auto; height: 30px; border-radius: 0 !important">
+                        <h3 style="margin-bottom:10px">Jitendra Gupta</h3>
+                        <h6 style="margin-bottom:10px; text-align: center">CEO</h6>
+                        <p>India</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 col-xs-12" style="background-size: cover;
+                     background-position: center center;
+                     background-repeat: no-repeat;">
+                    <div class="panel panel-default" style="padding:15px">
+                        <img src="img/Amar .jpeg" alt="" class="img-responsive"> <br>
+                        <img class="img-responsive" src="img/myntra.png" alt="" style="margin:auto; height: 30px; border-radius: 0 !important">
+                        <h3 style="margin-bottom:10px">Amar Nagaram</h3>
+                        <h6 style="margin-bottom:10px; text-align: center">CTO
+                        </h6>
+                        <p>India</p>
+                    </div>
+                </div> -->
+
+                <h2 style="margin-top:40px; text-align:center">Want to be a part of the Conference?</h2>
+<br><br>
+               <h3 style="text-align:center;"> <a class="btn" href="register.html" style="font-size:15px; text-align:center !important; padding: 10px 30px">Register</a></h3>
+
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- End OF Speaker Section -->
+
+
+
+
+
+
+    <!-- Footer Section -->
+   
+<hr style="border: 1px solid #fff">
+
+
+<footer style="padding-top:20px; padding-bottom:0px; margin-bottom:0; color: #fff !important;">
+    <div class="container">
+        
+    <div class="row">
+            <div class="container">
+        <div class="col-md-8">
+            <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <h4 style="color:#fff">About</h4> <br>
+                    <p><a href="http://www.saarcstartupawards.com/" style="color:#fff" target="_blank">SAARC Startup Awards</a></p>
+                    <p><a href="http://www.globalstartupawards.com/" style="color:#fff" target="_blank">GSA</a></p>
+                </div>
+                <hr>
+                <div class="row">
+                       
+                        <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Follow us :
+                                &nbsp; <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> &nbsp; <a href="#"><i
+                                        class="fa fa-twitter" aria-hidden="true"></i></a> &nbsp; <a href="#"><i class="fa fa-linkedin"
+                                        aria-hidden="true"></i></a> &nbsp; <a href="#"><i class="fa fa-google-plus-official"
+                                        aria-hidden="true"></i></a> &nbsp; &nbsp;</p>
+                    </div>
+            </div>
+                
+                <div class="col-md-6">
+                    <hr class="hidden-md hidden-lg">
+                    <div class="row">
+                    <p style="color:#fff;">Subscribe for latest News</p>
+                    <form method="post" action="sub.php">
+                    <input id="email" type="email" name="email"  placeholder="Email Id"> <br>
+                    <button type="submit" class="btn" style="margin-top:40px; text-decoration: none; color:#8201C4" name="submit">Subscribe
+                        &nbsp; <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+                <hr class="hidden-sm hidden-xs">
+                <div class="row hidden-sm hidden-xs">
+                        <p class="mail"><a href="mailto:hkhudania@gmail.com" target="_top">Email &nbsp; <i class="fa fa-envelope-o"
+                            aria-hidden="true"></i></a></p>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col-md-12 hidden-sm hidden-xs">
+                <p style="font-size:12px">Website Designed and Developed by <a href="">Fame Technologies</a></p>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-4" >
+           <div class="row">
+                <p style="color:#fff; text-align: center">Tweets by SAARCstartups</p>
+           </div>
+           <div class="row" style="height:280px; width:250px; overflow-y:scroll; margin:auto">
+                <a class="twitter-timeline" href="https://twitter.com/SAARCstartups?ref_src=twsrc%5Etfw">Tweets by SAARCstartups</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            </div>
+        </div>
+
+    <br>
+
+        <div class="hidden-md hidden-lg">
+                <p style="font-size:12px; text-align: center; margin-bottom:0; padding-bottom: 0">Website Designed and Developed by <a href="">Fame Technologies</a></p>
+            </div>
+    </div>
+</div>
+</footer>
+
+
+    <!-- End Of Footer Section -->
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 50) {
+                    $('.navbar').addClass('white');
+                } else {
+                    $('.navbar').addClass('white');
+                }
+            });
+        });
+    </script>
+
+
+
+    <!-- Hotjar Tracking Code for https://www.saarccxosummit.com -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 1129448,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+
+</body>
+
+</html>
