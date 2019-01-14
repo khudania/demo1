@@ -144,13 +144,15 @@
         }
 
         .panel-default:hover{
-            border: 2px solid ;
-            /* border-color: -moz-linear-gradient(top, blue, red) !important;
-             */
-             /* -webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#00abeb), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat; */
-
+            border: 2px solid transparent;
+            /* border-radius: 20px !important; */
+            border-image: linear-gradient(180deg, #1a02f1, #ee0b0b);
+            border-image-slice: 1;
+            /* border-bottom-left-radius: 20px !important; */
+           
+           
         }
-
+       
         .panel-header img{
             margin-top: 20px !important;
         }
@@ -165,6 +167,9 @@
             /* background:#fff;  */
             border-radius: 0 0 18px 18px; padding: 5px
         }
+
+        
+
 
         #pname{
             text-align:center; 
