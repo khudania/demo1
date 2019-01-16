@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/sss-icon.png" type="image/jpeg" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
+    <title>SAARC CXO CONFERENCE</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Unlock');
+        @import url('https://fonts.googleapis.com/css?family=Merriweather');
+        @import url('https://fonts.googleapis.com/css?family=Oswald');
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+        @import url('https://fonts.googleapis.com/css?family=Thasadith');
+        @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+        @import url('https://fonts.googleapis.com/css?family=Quicksand');
+        @import url('https://fonts.googleapis.com/css?family=Text+Me+One');
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+      
+
+        body{
+            /* width: 100%; */
+            /* height: 100%; */
+            /* margin: 0px; */
+            /* padding: 0px; */
+            background-color: #000 !important;
+           
+        }
+
+body {
+    /* background-color: #434c50; */
+    min-height: 100vh;
+    font: normal 16px sans-serif;
+    /* padding: 40px 0; */
+}
+
+.container-fluid.gallery-container {
+    /* background-color: #fff; */
+    color: #35373a;
+    min-height: 100vh;
+    padding: 30px 50px;
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    color: #999;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0 !important;
+    position: relative;
+}
+
+.tz-gallery .lightbox img:hover{
+    border: 1px solid #ED1C24 !important;
+}
+
+.tz-gallery .lightbox:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Glyphicons Halflings';
+    content: '\e003';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(78, 78, 78, 0.473);
+    content: '';
+    transition: 0.4s;
+    border: 2px solid #ED1C24;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}
+
+       
+    </style>
+</head>
+
+<body>
+
+    <!-- Start of Header Section -->
+    <section class="header">
+        <nav class="navbar navbar-expand-lg navbar-fixed-top white">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/saarclogo.png" style="height:30px" alt="" class="img-responsive">
+                    </a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="list-unstyled list-inline nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="why-attend.html">Why Attend</a></li>
+                        <li><a href="speakers.html">Speakers</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="attendees.html">Attendees-2018</a></li>
+                        <li  class="active"><a href="gallery.html">Gallery-2018</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </section>
+    <!-- End of Header Section -->
+
+    <!-- Speakers Section -->
+    <section id="" class="">
+        
+<div class="container-fluid gallery-container">
+
+   
+
+    
+        <div class="tz-gallery">
+    
+            <div class="row">
+    
+                <div class="col-sm-12 col-md-4">
+                    <a class="lightbox" href="./img/1.JPG">
+                        <img src="./img/1.JPG" alt="Bridge">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="./img/2.JPG">
+                            <img src="./img/2.JPG" alt="Bridge">
+                        </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="./img/3.JPG">
+                            <img src="./img/3.JPG" alt="Bridge">
+                        </a>
+                </div>
+               
+                <div class="col-sm-12 col-md-8">
+                        <a class="lightbox" href="./img/4.JPG">
+                            <img src="./img/4.JPG" alt="Bridge">
+                        </a>
+                </div>
+             
+                   
+                <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="./img/5.JPG">
+                            <img src="./img/5.JPG" alt="Bridge">
+                        </a>
+                </div> 
+            
+                <div class="col-sm-6 col-md-4">
+                        <a class="lightbox" href="./img/6.JPG">
+                            <img src="./img/6.JPG" alt="Bridge">
+                        </a>
+                </div>
+
+                <div class="col-sm-12 col-md-4">
+                        <a class="lightbox" href="./img/7.JPG">
+                            <img src="./img/7.JPG" alt="Bridge">
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="./img/8.JPG">
+                                <img src="./img/8.JPG" alt="Bridge">
+                            </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="./img/9.JPG">
+                                <img src="./img/9.JPG" alt="Bridge">
+                            </a>
+                    </div>
+    
+                    <div class="col-sm-12 col-md-4">
+                            <a class="lightbox" href="./img/10.JPG">
+                                <img src="./img/10.JPG" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                                <a class="lightbox" href="./img/11.JPG">
+                                    <img src="./img/11.JPG" alt="Bridge">
+                                </a>
+                        </div>
+                    <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="./img/12.JPG">
+                                <img src="./img/12.JPG" alt="Bridge">
+                            </a>
+                    </div>
+                   
+                    <div class="col-sm-12 col-md-8">
+                            <a class="lightbox" href="./img/13.JPG">
+                                <img src="./img/13.JPG" alt="Bridge">
+                            </a>
+                    </div>
+                 
+                       
+                    <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="./img/14.JPG">
+                                <img src="./img/14.JPG" alt="Bridge">
+                            </a>
+                    </div> 
+                
+                    <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="./img/15-1.JPG">
+                                <img src="./img/15-1.JPG" alt="Bridge">
+                            </a>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+                            <a class="lightbox" href="./img/16.JPG">
+                                <img src="./img/16.JPG" alt="Bridge">
+                            </a>
+                    </div>
+    
+                    <div class="col-sm-12 col-md-4">
+                            <a class="lightbox" href="./img/17.JPG">
+                                <img src="./img/17.JPG" alt="Bridge">
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                                <a class="lightbox" href="./img/18.JPG">
+                                    <img src="./img/18.JPG" alt="Bridge">
+                                </a>
+                        </div>
+
+
+                        <div class="col-sm-12 col-md-4">
+                                <a class="lightbox" href="./img/19.JPG">
+                                    <img src="./img/19.JPG" alt="Bridge">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                    <a class="lightbox" href="./img/20.JPG">
+                                        <img src="./img/20.JPG" alt="Bridge">
+                                    </a>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                    <a class="lightbox" href="./img/21.JPG">
+                                        <img src="./img/21.JPG" alt="Bridge">
+                                    </a>
+                            </div>
+                           
+                            <div class="col-sm-12 col-md-8">
+                                    <a class="lightbox" href="./img/22.JPG">
+                                        <img src="./img/22.JPG" alt="Bridge">
+                                    </a>
+                            </div>
+                         
+                               
+                            <div class="col-sm-6 col-md-4">
+                                    <a class="lightbox" href="./img/23.JPG">
+                                        <img src="./img/23.JPG" alt="Bridge">
+                                    </a>
+                            </div> 
+                        
+                            <div class="col-sm-6 col-md-4">
+                                    <a class="lightbox" href="./img/24.JPG">
+                                        <img src="./img/24.JPG" alt="Bridge">
+                                    </a>
+                            </div>
+            
+                            <div class="col-sm-12 col-md-4">
+                                    <a class="lightbox" href="./img/25.JPG">
+                                        <img src="./img/25.JPG" alt="Bridge">
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                        <a class="lightbox" href="./img/26.JPG">
+                                            <img src="./img/26.JPG" alt="Bridge">
+                                        </a>
+                                </div>
+                                <div class="col-sm-6 col-md-4">
+                                        <a class="lightbox" href="./img/27.JPG">
+                                            <img src="./img/27.JPG" alt="Bridge">
+                                        </a>
+                                </div>
+                
+                                <div class="col-sm-12 col-md-4">
+                                        <a class="lightbox" href="./img/28.JPG">
+                                            <img src="./img/28.JPG" alt="Bridge">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 col-md-4">
+                                            <a class="lightbox" href="./img/29.JPG">
+                                                <img src="./img/29.JPG" alt="Bridge">
+                                            </a>
+                                    </div>
+                                <div class="col-sm-6 col-md-4">
+                                        <a class="lightbox" href="./img/30.JPG">
+                                            <img src="./img/30.JPG" alt="Bridge">
+                                        </a>
+                                </div>
+                               
+                                
+           
+            </div>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+        </section>
+
+     <!-- Footer Section -->
+   
+<hr style="border: 1px solid #fff">
+
+
+<footer style="padding-top:20px; padding-bottom:0px; margin-bottom:0; color: #fff !important;">
+    <div class="container">
+        
+    <div class="row">
+            <div class="container">
+        <div class="col-md-8">
+            <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <h4 style="color:#fff">About</h4> <br>
+                    <p><a href="http://www.saarcstartupawards.com/" style="color:#fff" target="_blank">SAARC Startup Awards</a></p>
+                    <p><a href="http://www.globalstartupawards.com/" style="color:#fff" target="_blank">GSA</a></p>
+                </div>
+                <hr>
+                <div class="row">
+                       
+                        <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Follow us :
+                                &nbsp; <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> &nbsp; <a href="#"><i
+                                        class="fa fa-twitter" aria-hidden="true"></i></a> &nbsp; <a href="#"><i class="fa fa-linkedin"
+                                        aria-hidden="true"></i></a> &nbsp; <a href="#"><i class="fa fa-google-plus-official"
+                                        aria-hidden="true"></i></a> &nbsp; &nbsp;</p>
+                    </div>
+            </div>
+                
+                <div class="col-md-6">
+                    <hr class="hidden-md hidden-lg">
+                    <div class="row">
+                    <p style="color:#fff;">Subscribe for latest News</p>
+                    <form method="post" action="sub.php">
+                    <input id="email" type="email" name="email"  placeholder="Email Id"><br>
+                    <button type="submit" class="btn" style="margin-top:30px; text-decoration: none; color:#8201C4" name="submit">Subscribe
+                        &nbsp; <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+                <hr class="hidden-sm hidden-xs">
+                <div class="row hidden-sm hidden-xs">
+                        <p class="mail"><a href="mailto:hkhudania@gmail.com" target="_top">Email &nbsp; <i class="fa fa-envelope-o"
+                            aria-hidden="true"></i></a></p>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col-md-12 hidden-sm hidden-xs">
+                <p style="font-size:12px">Website Designed and Developed by <a href="">Fame Technologies</a></p>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-4" >
+           <div class="row">
+                <p style="color:#fff; text-align: center">Tweets by SAARCstartups</p>
+           </div>
+           <div class="row" style="height:280px; width:250px; overflow-y:scroll; margin:auto">
+                <a class="twitter-timeline" href="https://twitter.com/SAARCstartups?ref_src=twsrc%5Etfw">Tweets by SAARCstartups</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            </div>
+        </div>
+
+    <br>
+
+        <div class="hidden-md hidden-lg">
+                <p style="font-size:12px; text-align: center; margin-bottom:0; padding-bottom: 0">Website Designed and Developed by <a href="">Fame Technologies</a></p>
+            </div>
+    </div>
+</div>
+</footer>
+
+
+    <!-- End Of Footer Section -->
+
+
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 50) {
+                    $('.navbar').addClass('white');
+                } else {
+                    $('.navbar').addClass('white');
+                }
+            });
+        });
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+
+ <!-- Global site tag (gtag.js) - Google Analytics --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122932718-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122932718-2');
+</script>
+
+
+ <!-- Hotjar Tracking Code for https://www.saarccxosummit.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1129448,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5c2e22b87a79fc1bddf32390/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+
+</html>
