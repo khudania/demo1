@@ -234,7 +234,7 @@ nav.white {
     display: block;
     height: 2px;
     width: 64px;
-    background-color: #8201C4
+    background-color: #ED1C24
 
 }
 /* End of Info Section */
@@ -270,7 +270,7 @@ footer .mail a:hover{
             /* font-size: 17px; */
             /* text-transform: uppercase; */
             /* border-radius: 15px; */
-            font-family: 'Open Sans Condensed', sans-serif;
+            /* font-family: 'Open Sans Condensed', sans-serif; */
             /* font-weight: 600; */
             border-color: rgb(255, 0, 0);
    
