@@ -281,9 +281,22 @@ footer p i{
 }
 
 
-footer p i:hover{
-    color: #ED1C24
+footer p .fa-twitter:hover{
+    color: #1DA1F2
 }
+
+footer p .fa-facebook:hover{
+    color:#4267B2
+}
+
+
+footer p .fa-facebook-f:hover{
+    color:#4267B2
+}
+
+.fa-linkedin:hover, .fa-linkedin-square:hover, .fa-linkedin-in:hover   {
+    color: #0077B5;
+  }
 
 footer #fmail .btn{
     margin-top:20px; 
