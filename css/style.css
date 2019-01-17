@@ -272,10 +272,38 @@ footer .mail a:hover{
             /* border-radius: 15px; */
             /* font-family: 'Open Sans Condensed', sans-serif; */
             /* font-weight: 600; */
-            border-color: rgb(255, 0, 0);
+            border-color: #ED1C24;
    
 }
 
 footer p i{
     color:#fff
 }
+
+
+footer p i:hover{
+    color: #ED1C24
+}
+
+footer #fmail .btn{
+    margin-top:20px; 
+    text-decoration: none; 
+    color:#ED1C24; 
+    background: transparent; 
+    border-color: #fff;
+    padding: 5px 10px;
+}
+
+footer #fmail .btn:hover{
+    color: #fff;
+    border-color: #ED1C24;
+}
+
+@media(max-width:750px){
+    footer .col-md-3{
+      text-align: center !important;
+      margin-bottom: 50px;
+      
+      
+    }
+  }
